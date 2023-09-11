@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Mitr:wght@400;500;600&display=swap");
+
+* {
+    font-family: "Josefin Sans", sans-serif;
+    font-family: "Mitr", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #313131;
+    display: flex;
+    justify-content: center;
+}
+
+.conteudo {
+    display: flex;
+    flex-direction: column;
+
+    padding: 0 5%;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #f9f9f9;
+    margin: 20px 0 20px 0;
+}
+
+
+.container-formulario {
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+
+    padding: 1%;
+}
+
+.pesquisa {
+    outline: 1px solid #f9f9f9;
+
+    border: none;
+    border-radius: 10px;
+
+    font-size: 18px;
+
+    padding: 5px;
+}
+
+.pesquisa-erro {
+    outline: 2px solid #da471b !important;
+}
+
+.btn {
+    display: grid;
+    padding: 15px;
+
+    border: none;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    outline: 1px solid #ffffff;
+}
+
+.btn-pesquisar {
+    background-color: #4dad5b;
+    color: white;
+}
+
+.btn-limpar {
+    background-color: #da471b;
+    color: white;
+}
+
+.card-pokemon {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    height: 250px;
+
+    background-color: #e1e1e1;
+    color: #313131;
+
+    border-radius: 1rem;
+
+    margin-top: 5%;
+}
+
+.tipo {
+    padding: 0 10px 0 10px;
+    border-radius: 5px;
+    font-weight: 400;
+}
+
+.grid-pokemons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 10px;
+}
+
+.cards-container {
+    display: flex; /* Use flexbox para organizar os cards */
+    flex-wrap: wrap; /* Quebra para a próxima linha quando não couberem mais na largura */
+    gap: 10px; /* Espaço entre os cards */
+}
